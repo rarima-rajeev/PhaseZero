@@ -164,7 +164,7 @@ export default function Results() {
                       <tr className="border-b border-stone-300 text-left text-xs uppercase tracking-wide text-stone-500">
                         <th className="py-2 pr-4 font-semibold">&nbsp;</th>
                         <th className="py-2 pr-4 font-semibold">My trained model</th>
-                        <th className="py-2 font-semibold">Asking Gemini directly</th>
+                        <th className="py-2 font-semibold">Asking Gemini AI directly</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -314,7 +314,7 @@ export default function Results() {
           me in production. I would reach for an agent when the steps genuinely differ each time.
         </li>
         <li>
-          <span className="font-semibold">The AI writes, it does not decide.</span> Gemini never sees
+          <span className="font-semibold">The AI writes, it does not decide.</span> Gemini AI never sees
           a question it could answer from memory. It gets the facts and has to cite them, and a
           summary citing a source that does not exist is thrown away automatically.
         </li>

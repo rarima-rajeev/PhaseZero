@@ -8,13 +8,13 @@ const PARTS = [
   {
     tag: "Machine learning",
     title: "The pattern spotter",
-    body: "I trained a small model on thousands of chemicals that scientists had already tested in the lab. It learned what the risky ones tend to look like. Given a new drug's structure, it gives a score out of 100. It is a hint to look closer, never a verdict.",
-    sources: "Trained on public lab data (Therapeutics Data Commons)",
+    body: "A small model was trained — by code running on my Mac, not by any AI service — on about 11,000 chemicals that scientists had already tested in the lab. 500 decision trees were grown. Each tree is a flowchart of yes/no questions. It learned to tell the risky ones from the safe ones. Given a drug's structure, it gives a score out of 100. It's a hint to look closer, never a verdict.",
+    sources: "Random Forest, built with scikit-learn. Trained on public lab data from Therapeutics Data Commons.",
   },
   {
-    tag: "Gemini",
+    tag: "Gemini AI",
     title: "The writer",
-    body: "Google's Gemini turns those facts into a short, plain-English summary. It is handed the facts and nothing else, and it has to point to a source for every sentence. If it points to a source that does not exist, we throw the summary away.",
+    body: "Google's Gemini AI turns those facts into a short, plain-English summary. It is handed the facts and nothing else, and it has to point to a source for every sentence. If it points to a source that does not exist, we throw the summary away.",
     sources: "Gemini Flash, run once ahead of time",
   },
 ];
@@ -60,15 +60,15 @@ const SOURCES = [
 const DECISIONS = [
   {
     q: "Why not an AI agent?",
-    a: "An agent decides its own next step. Here the steps never change: look up the drug, score it, write it up. A fixed set of steps is cheaper, faster, and far easier to test. Agents earn their keep when the path is different every time.",
+    a: "An AI agent is like a chef who decides what to cook as they go. A pipeline is like a recipe — the same steps, in the same order, every time.\n\nEvery drug here asks the same question, so just a single recipe is all you need. It's cheaper, it's faster, and I can check it actually works. A chef is worth paying for when you don't know what's for dinner.",
   },
   {
     q: "Why work everything out ahead of time?",
-    a: "All 500 drug cards are built once on my laptop and saved as plain files. So the website needs no AI and no server to answer a visitor, costs almost nothing to run, and shows the same answer to everyone.",
+    a: "It's like cooking everything the night before instead of cooking to order. The food is made once, then brought to where it's served.\n\nAll 500 drug cards were worked out once on my Mac, saved as plain files, and uploaded to cloud. So when you look a drug up, nothing is being worked out — it is simply handed to you. That makes the site instant, almost free to run, and the same for everyone.",
   },
   {
     q: "Why keep the AI away from the facts?",
-    a: "Chatbots are good with words and can be confidently wrong about facts. So the model does the scoring, code does the fact-finding, and the AI only does the writing — on a short leash, with sources.",
+    a: "An AI chatbot is a wonderful writer that can be confidently wrong. Ask it for a fact and it may hand you a very convincing one that isn't true.\n\nSo here it is never asked for a fact. The code finds the facts, the model does the scoring, and the AI is given the finished list and told: write this up, and point to where each piece came from. It writes. It doesn't decide.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function HowItWorks() {
           { k: "You type", v: "a drug name" },
           { k: "Code", v: "finds the facts" },
           { k: "ML model", v: "scores the risk" },
-          { k: "Gemini", v: "writes it up" },
+          { k: "Gemini AI", v: "writes it up" },
           { k: "You see", v: "one risk card" },
         ].map((s, i) => (
           <li
@@ -137,7 +137,7 @@ export default function HowItWorks() {
         {DECISIONS.map((d) => (
           <div key={d.q}>
             <dt className="text-sm font-semibold">{d.q}</dt>
-            <dd className="mt-1 text-sm leading-relaxed text-stone-700">{d.a}</dd>
+            <dd className="mt-1 whitespace-pre-line text-sm leading-relaxed text-stone-700">{d.a}</dd>
           </div>
         ))}
       </dl>

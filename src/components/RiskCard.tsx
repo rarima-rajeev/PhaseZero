@@ -149,7 +149,7 @@ export default function RiskCard({ card }: { card: Card }) {
         <Section title="In plain words">
           <p className="whitespace-pre-line text-sm leading-relaxed">{card.summary}</p>
           <p className="mt-2 text-xs text-stone-500">
-            Written by AI (Gemini) using only the facts above. The numbers in brackets are its
+            Written by Gemini AI using only the facts above. The numbers in brackets are its
             sources.
           </p>
         </Section>
