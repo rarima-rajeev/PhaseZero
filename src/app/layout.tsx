@@ -21,7 +21,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <main className="py-10">{children}</main>
           <footer className="border-t border-stone-200 pt-6 text-xs leading-relaxed text-stone-500">
             Phase Zero is a learning project built by an AI product manager, not a drug expert. It
-            uses free public data. It is not medical advice, and the scores can be wrong.
+            uses free public data and no patient records. It is not medical advice, and the scores
+            can be wrong. Do not use it for clinical decisions.
           </footer>
         </div>
       </body>

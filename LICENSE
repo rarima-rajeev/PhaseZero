@@ -1,0 +1,65 @@
+Phase Zero is released under two licences: the code under MIT, and the drug data
+under CC BY-SA 3.0, because the data it is derived from requires it.
+
+================================================================================
+CODE — MIT Licence
+================================================================================
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+DATA — CC BY-SA 3.0 Unported
+================================================================================
+
+The drug data in public/data/ and ml/cache/ is derived from ChEMBL, which is
+licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported Licence
+(https://creativecommons.org/licenses/by-sa/3.0/). Under that licence this
+derived data is released on the same terms.
+
+Sources and licences
+--------------------
+
+  ChEMBL (EMBL-EBI)             CC BY-SA 3.0    https://www.ebi.ac.uk/chembl/
+  Therapeutics Data Commons     CC BY 4.0       https://tdcommons.ai/
+  PubChem (US NIH)              Public domain   https://pubchem.ncbi.nlm.nih.gov/
+  openFDA (US FDA)              Public domain   https://open.fda.gov/
+  ClinicalTrials.gov (US NIH)   Public domain   https://clinicaltrials.gov/
+
+Citations
+---------
+
+  Zdrazil B, Felix E, Hunter F, et al. The ChEMBL Database in 2023: a drug
+  discovery platform spanning multiple bioactivity data types and time periods.
+  Nucleic Acids Research 52(D1):D1180-D1192, 2024. doi:10.1093/nar/gkad1004
+
+  Xu Y, Dai Z, Chen F, Gao S, Pei J, Lai L. Deep learning for drug-induced liver
+  injury. Journal of Chemical Information and Modeling 55(10):2085-2093, 2015.
+  (liver training data, via Therapeutics Data Commons)
+
+  Karim A, Lee M, Balle T, Sattar A. CardioTox net: a robust predictor for hERG
+  channel blockade based on deep learning meta-feature ensembles. Journal of
+  Cheminformatics 13:60, 2021. doi:10.1186/s13321-021-00541-z
+  (heart training data, via Therapeutics Data Commons)
+
+Disclaimer
+----------
+
+This is an educational project. The data has not been checked for clinical use.
+It is not medical advice. Do not use it for clinical decisions.

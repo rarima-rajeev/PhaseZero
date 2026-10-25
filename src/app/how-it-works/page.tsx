@@ -19,6 +19,44 @@ const PARTS = [
   },
 ];
 
+const SOURCES = [
+  {
+    name: "ChEMBL",
+    who: "EMBL-EBI",
+    url: "https://www.ebi.ac.uk/chembl/",
+    gave: "Which drugs were pulled from the market or carry official warnings, and why",
+    licence: "CC BY-SA 3.0",
+  },
+  {
+    name: "Therapeutics Data Commons",
+    who: "Harvard",
+    url: "https://tdcommons.ai/",
+    gave: "The lab measurements both models learned from",
+    licence: "CC BY 4.0",
+  },
+  {
+    name: "PubChem",
+    who: "US NIH",
+    url: "https://pubchem.ncbi.nlm.nih.gov/",
+    gave: "Chemical structures and drug information",
+    licence: "Public domain",
+  },
+  {
+    name: "openFDA",
+    who: "US FDA",
+    url: "https://open.fda.gov/",
+    gave: "Drug label warnings",
+    licence: "Public domain",
+  },
+  {
+    name: "ClinicalTrials.gov",
+    who: "US NIH",
+    url: "https://clinicaltrials.gov/",
+    gave: "Trials that were stopped early, and the stated reason",
+    licence: "Public domain",
+  },
+];
+
 const DECISIONS = [
   {
     q: "Why not an AI agent?",
@@ -111,6 +149,54 @@ export default function HowItWorks() {
           Results &amp; decisions
         </a>
         .
+      </p>
+
+      <h2 className="mt-12 text-xl font-semibold tracking-tight">Where the data comes from</h2>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-700">
+        Everything here is free, public data. No patient records of any kind were used.
+      </p>
+
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full min-w-[32rem] border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-stone-300 text-left text-xs uppercase tracking-wide text-stone-500">
+              <th className="py-2 pr-4 font-semibold">Source</th>
+              <th className="py-2 pr-4 font-semibold">What it gave us</th>
+              <th className="py-2 font-semibold">Licence</th>
+            </tr>
+          </thead>
+          <tbody>
+            {SOURCES.map((s) => (
+              <tr key={s.name} className="border-b border-stone-200 align-top">
+                <td className="py-2 pr-4">
+                  <a href={s.url} target="_blank" rel="noreferrer" className="font-medium underline hover:text-stone-900">
+                    {s.name}
+                  </a>
+                  <span className="block text-xs text-stone-500">{s.who}</span>
+                </td>
+                <td className="py-2 pr-4 text-stone-700">{s.gave}</td>
+                <td className="py-2 whitespace-nowrap text-stone-700">{s.licence}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-stone-700">
+        ChEMBL asks that work built on it be shared on the same terms, so the drug data this site
+        produces is published under the same CC BY-SA 3.0 licence. The code is MIT.
+      </p>
+
+      <p className="mt-4 max-w-2xl text-xs leading-relaxed text-stone-500">
+        <span className="font-medium">Citations.</span> ChEMBL: Zdrazil B. et al.,{" "}
+        <em>Nucleic Acids Research</em> 52(D1), 2024. Liver data: Xu Y. et al.,{" "}
+        <em>J. Chem. Inf. Model.</em> 55(10), 2015. Heart data: Karim A. et al.,{" "}
+        <em>J. Cheminform.</em> 13:60, 2021.
+      </p>
+
+      <p className="mt-3 max-w-2xl text-xs leading-relaxed text-stone-500">
+        openFDA&apos;s own note applies here too: this data has not been checked for clinical use, and
+        no one should rely on it for medical decisions.
       </p>
     </div>
   );

@@ -48,6 +48,13 @@ Drugs withdrawn from the market for liver or heart harm are removed from trainin
 site drugs that appear in the training data are scored out-of-fold. So no score shown on the site
 comes from a model that saw that drug.
 
+## Licence
+
+**Data:** derived from ChEMBL (CC BY-SA 3.0), Therapeutics Data Commons (CC BY 4.0), PubChem,
+openFDA and ClinicalTrials.gov (public domain). See LICENSE.
+
+**Code:** MIT.
+
 ## Limits
 
 Decision support for researchers. Not medical advice. No patient data. See the Results page for the
