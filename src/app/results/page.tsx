@@ -1,18 +1,7 @@
 import Image from "next/image";
-import results from "@/data/results.json";
-
-const cost = (results as Record<string, unknown>).gemini_cost as null | {
-  cards: { calls: number; inr: number };
-  experiment: { calls: number; inr: number };
-  total_inr: number;
-};
 
 function H({ children }: { children: React.ReactNode }) {
   return <h2 className="mt-14 text-xl font-semibold tracking-tight">{children}</h2>;
-}
-
-function Lead({ children }: { children: React.ReactNode }) {
-  return <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-700">{children}</p>;
 }
 
 function Stat({ value, label }: { value: string; label: string }) {
@@ -95,26 +84,6 @@ export default function Results() {
         <br />
         Test 3 — the fancier AI model, ChemBERTa, is pre-trained on chemical structures.
       </p>
-
-      {/* ---------------------------------------------------------------- Cost */}
-      {cost && (
-        <>
-          <H>What the whole thing cost</H>
-          <Lead>
-            All the AI work happens once, on a laptop, before anyone visits. So this is the entire
-            bill — not a monthly one, and not one that grows as more people come.
-          </Lead>
-          <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            <Stat value={`₹${cost.cards.inr}`} label="writing the 500 plain-English summaries" />
-            <Stat value={`₹${cost.experiment.inr}`} label="running the chatbot test" />
-            <Stat value="₹0" label="per visitor, because nothing is worked out live" />
-          </div>
-          <p className="mt-2 text-xs text-stone-500">
-            ₹{cost.total_inr} in total. Training the models cost nothing but a few minutes of laptop
-            time.
-          </p>
-        </>
-      )}
 
       {/* ---------------------------------------------------------------- Limits */}
       <H>What this cannot do</H>
