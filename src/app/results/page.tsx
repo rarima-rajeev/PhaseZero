@@ -448,9 +448,9 @@ export default function Results() {
           </table>
         </div>
         <p className="mt-3 text-sm leading-relaxed text-stone-600">
-          Two Random Forest classifiers, 500 trees each, built with scikit-learn on 2,048-bit Morgan
+          Two Random Forest classifiers, 400 trees each, built with scikit-learn on 2,048-bit Morgan
           fingerprints from RDKit. In plain words: each drug&apos;s shape becomes a long row of yes/no
-          answers, and 500 simple flowcharts vote on it. A score of 50 or more counts as flagged.
+          answers, and 400 simple flowcharts vote on it. A score of 50 or more counts as flagged.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-stone-600">
           Nothing shown on this site was scored by a model that had seen that drug. Withdrawn drugs

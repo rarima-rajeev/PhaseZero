@@ -39,7 +39,7 @@ def to_np(fps):
 
 
 def model():
-    return RandomForestClassifier(n_estimators=500, min_samples_leaf=1, class_weight="balanced",
+    return RandomForestClassifier(n_estimators=400, min_samples_leaf=1, class_weight="balanced",
                                   n_jobs=-1, random_state=0)
 
 

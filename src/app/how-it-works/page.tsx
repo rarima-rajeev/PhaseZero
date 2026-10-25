@@ -8,7 +8,7 @@ const PARTS = [
   {
     tag: "Machine learning",
     title: "The pattern spotter",
-    body: "A small model was trained — by code running on my Mac, not by any AI service — on about 11,000 chemicals that scientists had already tested in the lab. 500 decision trees were grown. Each tree is a flowchart of yes/no questions. It learned to tell the risky ones from the safe ones. Given a drug's structure, it gives a score out of 100. It's a hint to look closer, never a verdict.",
+    body: "A small model was trained — by code running on my Mac, not by any AI service — on about 11,000 chemicals that scientists had already tested in the lab. 400 decision trees were grown. Each tree is a flowchart of yes/no questions. It learned to tell the risky ones from the safe ones. Given a drug's structure, it gives a score out of 100. It's a hint to look closer, never a verdict.",
     sources: "Random Forest, built with scikit-learn. Trained on public lab data from Therapeutics Data Commons.",
   },
   {

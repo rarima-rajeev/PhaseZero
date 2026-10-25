@@ -4,15 +4,15 @@
    "training_rows": 426,
    "positives": 196,
    "test_rows": 86,
-   "test_auc": 0.828,
-   "cv_auc": 0.88,
+   "test_auc": 0.826,
+   "cv_auc": 0.879,
    "site_drugs_in_training_scored_out_of_fold": 98
   },
   "heart": {
    "training_rows": 10883,
    "positives": 5370,
    "test_rows": 2177,
-   "test_auc": 0.892,
+   "test_auc": 0.891,
    "cv_auc": 0.884,
    "site_drugs_in_training_scored_out_of_fold": 109
   }
@@ -24,120 +24,114 @@
     "withdrawn": 63,
     "caught": 42,
     "clean_drugs": 207,
-    "clean_flagged": 103,
+    "clean_flagged": 105,
     "results": [
      {
-      "id": "CHEMBL437",
-      "name": "Sulfathiazole",
+      "id": "CHEMBL139877",
+      "name": "Sulfacarbamide",
       "score": 0.938,
       "caught": true
      },
      {
-      "id": "CHEMBL139877",
-      "name": "Sulfacarbamide",
-      "score": 0.934,
+      "id": "CHEMBL437",
+      "name": "Sulfathiazole",
+      "score": 0.93,
       "caught": true
      },
      {
       "id": "CHEMBL1909285",
       "name": "Nitrefazole",
-      "score": 0.906,
+      "score": 0.905,
       "caught": true
      },
      {
       "id": "CHEMBL277100",
       "name": "Temafloxacin",
-      "score": 0.862,
+      "score": 0.86,
       "caught": true
      },
      {
       "id": "CHEMBL428",
       "name": "Trovafloxacin",
-      "score": 0.856,
+      "score": 0.848,
       "caught": true
      },
      {
       "id": "CHEMBL2220427",
       "name": "Erythromycin Propionate",
-      "score": 0.85,
+      "score": 0.845,
       "caught": true
      },
      {
       "id": "CHEMBL56367",
       "name": "Nimesulide",
-      "score": 0.82,
+      "score": 0.828,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL1742471",
+      "name": "Ebrotidine",
+      "score": 0.815,
       "caught": true
      },
      {
       "id": "CHEMBL1201197",
       "name": "Alatrofloxacin",
-      "score": 0.816,
+      "score": 0.812,
       "caught": true
      },
      {
       "id": "CHEMBL36506",
       "name": "Novobiocin",
-      "score": 0.814,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL13376",
-      "name": "Clometacin",
       "score": 0.81,
       "caught": true
      },
      {
       "id": "CHEMBL404108",
       "name": "Lumiracoxib",
-      "score": 0.81,
+      "score": 0.802,
       "caught": true
      },
      {
-      "id": "CHEMBL1742471",
-      "name": "Ebrotidine",
-      "score": 0.8,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL157101",
-      "name": "Ketoconazole",
-      "score": 0.796,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL255044",
-      "name": "Flupirtine",
-      "score": 0.786,
+      "id": "CHEMBL13376",
+      "name": "Clometacin",
+      "score": 0.797,
       "caught": true
      },
      {
       "id": "CHEMBL282724",
       "name": "Sitaxentan",
-      "score": 0.784,
+      "score": 0.792,
       "caught": true
      },
      {
-      "id": "CHEMBL1324",
-      "name": "Tolcapone",
-      "score": 0.782,
+      "id": "CHEMBL157101",
+      "name": "Ketoconazole",
+      "score": 0.787,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL255044",
+      "name": "Flupirtine",
+      "score": 0.785,
       "caught": true
      },
      {
       "id": "CHEMBL348000",
       "name": "Cinchophen",
-      "score": 0.78,
+      "score": 0.785,
       "caught": true
      },
      {
       "id": "CHEMBL340978",
       "name": "Benoxaprofen",
-      "score": 0.776,
+      "score": 0.78,
       "caught": true
      },
      {
       "id": "CHEMBL54349",
       "name": "Alpidem",
-      "score": 0.776,
+      "score": 0.772,
       "caught": true
      },
      {
@@ -147,261 +141,267 @@
       "caught": true
      },
      {
+      "id": "CHEMBL1324",
+      "name": "Tolcapone",
+      "score": 0.767,
+      "caught": true
+     },
+     {
       "id": "CHEMBL1909072",
       "name": "Pipamazine",
-      "score": 0.768,
+      "score": 0.757,
       "caught": true
      },
      {
       "id": "CHEMBL6466",
       "name": "Coumarin",
-      "score": 0.702,
+      "score": 0.713,
       "caught": true
      },
      {
       "id": "CHEMBL1177",
       "name": "Pemoline",
-      "score": 0.662,
+      "score": 0.665,
       "caught": true
      },
      {
       "id": "CHEMBL623",
       "name": "Nefazodone",
-      "score": 0.658,
+      "score": 0.665,
       "caught": true
      },
      {
       "id": "CHEMBL188952",
       "name": "Pirprofen",
-      "score": 0.636,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL1256841",
-      "name": "Nialamide",
-      "score": 0.632,
+      "score": 0.635,
       "caught": true
      },
      {
       "id": "CHEMBL295124",
       "name": "Berberine",
-      "score": 0.612,
+      "score": 0.62,
       "caught": true
      },
      {
-      "id": "CHEMBL388590",
-      "name": "Benzbromarone",
-      "score": 0.608,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL1089221",
-      "name": "Bendazac",
-      "score": 0.598,
+      "id": "CHEMBL1256841",
+      "name": "Nialamide",
+      "score": 0.613,
       "caught": true
      },
      {
       "id": "CHEMBL267744",
       "name": "Ticrynafen",
-      "score": 0.596,
+      "score": 0.6,
       "caught": true
      },
      {
-      "id": "CHEMBL1909288",
-      "name": "Triacetyldiphenolisatin",
+      "id": "CHEMBL1909289",
+      "name": "Xenazoic Acid",
       "score": 0.59,
       "caught": true
      },
      {
-      "id": "CHEMBL232201",
-      "name": "Benziodarone",
+      "id": "CHEMBL388590",
+      "name": "Benzbromarone",
       "score": 0.59,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL254857",
-      "name": "Fipexide",
-      "score": 0.588,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL1077",
-      "name": "Bromfenac",
-      "score": 0.582,
       "caught": true
      },
      {
       "id": "CHEMBL1402684",
       "name": "Oxyphenisatin Acetate",
-      "score": 0.58,
+      "score": 0.588,
       "caught": true
      },
      {
-      "id": "CHEMBL1788385",
-      "name": "Tilbroquinol",
+      "id": "CHEMBL1909288",
+      "name": "Triacetyldiphenolisatin",
+      "score": 0.585,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL245807",
+      "name": "Oxyphenisatine",
+      "score": 0.585,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL254857",
+      "name": "Fipexide",
       "score": 0.58,
       "caught": true
      },
      {
       "id": "CHEMBL395110",
       "name": "Mepazine",
-      "score": 0.578,
+      "score": 0.58,
       "caught": true
      },
      {
-      "id": "CHEMBL1909289",
-      "name": "Xenazoic Acid",
-      "score": 0.568,
+      "id": "CHEMBL1077",
+      "name": "Bromfenac",
+      "score": 0.575,
       "caught": true
      },
      {
-      "id": "CHEMBL245807",
-      "name": "Oxyphenisatine",
-      "score": 0.564,
+      "id": "CHEMBL232201",
+      "name": "Benziodarone",
+      "score": 0.575,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL1089221",
+      "name": "Bendazac",
+      "score": 0.573,
       "caught": true
      },
      {
       "id": "CHEMBL1474963",
       "name": "Benzarone",
-      "score": 0.558,
+      "score": 0.555,
       "caught": true
      },
      {
-      "id": "CHEMBL522038",
-      "name": "Ximelagatran",
-      "score": 0.532,
+      "id": "CHEMBL1788385",
+      "name": "Tilbroquinol",
+      "score": 0.552,
       "caught": true
      },
      {
       "id": "CHEMBL436",
       "name": "Tolrestat",
-      "score": 0.526,
+      "score": 0.545,
       "caught": true
      },
      {
-      "id": "CHEMBL408",
-      "name": "Troglitazone",
-      "score": 0.494,
-      "caught": false
+      "id": "CHEMBL522038",
+      "name": "Ximelagatran",
+      "score": 0.527,
+      "caught": true
      },
      {
       "id": "CHEMBL1200714",
       "name": "Chlormezanone",
-      "score": 0.488,
+      "score": 0.49,
+      "caught": false
+     },
+     {
+      "id": "CHEMBL408",
+      "name": "Troglitazone",
+      "score": 0.49,
       "caught": false
      },
      {
       "id": "CHEMBL329522",
       "name": "Exifone",
-      "score": 0.464,
+      "score": 0.45,
       "caught": false
      },
      {
       "id": "CHEMBL37744",
       "name": "Zimeldine",
-      "score": 0.44,
+      "score": 0.438,
       "caught": false
      },
      {
       "id": "CHEMBL1615350",
       "name": "Clomacran",
-      "score": 0.434,
+      "score": 0.432,
       "caught": false
      },
      {
       "id": "CHEMBL152684",
       "name": "Beclobrate",
-      "score": 0.42,
+      "score": 0.417,
       "caught": false
      },
      {
       "id": "CHEMBL159226",
       "name": "Moxisylyte",
-      "score": 0.402,
+      "score": 0.407,
       "caught": false
      },
      {
       "id": "CHEMBL273575",
       "name": "Nomifensine",
-      "score": 0.388,
+      "score": 0.4,
       "caught": false
      },
      {
       "id": "CHEMBL141305",
       "name": "Cyclofenil",
-      "score": 0.372,
+      "score": 0.37,
       "caught": false
      },
      {
       "id": "CHEMBL75880",
       "name": "Perhexiline",
-      "score": 0.356,
+      "score": 0.357,
       "caught": false
      },
      {
       "id": "CHEMBL1740513",
       "name": "Isaxonine",
-      "score": 0.342,
+      "score": 0.338,
       "caught": false
      },
      {
       "id": "CHEMBL16073",
       "name": "Phenacetin",
-      "score": 0.338,
+      "score": 0.325,
       "caught": false
      },
      {
       "id": "CHEMBL260538",
       "name": "Ulipristal Acetate",
-      "score": 0.308,
+      "score": 0.292,
       "caught": false
      },
      {
       "id": "CHEMBL341812",
       "name": "Ibufenac",
-      "score": 0.3,
-      "caught": false
-     },
-     {
-      "id": "CHEMBL404849",
-      "name": "Suloctidil",
-      "score": 0.198,
+      "score": 0.29,
       "caught": false
      },
      {
       "id": "CHEMBL1341",
       "name": "Methoxyflurane",
-      "score": 0.174,
+      "score": 0.175,
+      "caught": false
+     },
+     {
+      "id": "CHEMBL404849",
+      "name": "Suloctidil",
+      "score": 0.175,
       "caught": false
      },
      {
       "id": "CHEMBL85231",
       "name": "Medifoxamine",
-      "score": 0.162,
-      "caught": false
-     },
-     {
-      "id": "CHEMBL27193",
-      "name": "Dilevalol",
-      "score": 0.158,
+      "score": 0.163,
       "caught": false
      },
      {
       "id": "CHEMBL1909283",
       "name": "Mebanazine",
-      "score": 0.15,
+      "score": 0.16,
+      "caught": false
+     },
+     {
+      "id": "CHEMBL27193",
+      "name": "Dilevalol",
+      "score": 0.16,
       "caught": false
      },
      {
       "id": "CHEMBL1909286",
       "name": "Phenoxypropazine",
-      "score": 0.086,
+      "score": 0.09,
       "caught": false
      },
      {
       "id": "CHEMBL44618",
       "name": "Chloroform",
-      "score": 0.036,
+      "score": 0.035,
       "caught": false
      }
     ]
@@ -410,216 +410,216 @@
     "withdrawn": 35,
     "caught": 20,
     "clean_drugs": 207,
-    "clean_flagged": 45,
+    "clean_flagged": 47,
     "results": [
      {
       "id": "CHEMBL296419",
       "name": "Astemizole",
-      "score": 0.966,
+      "score": 0.968,
       "caught": true
      },
      {
       "id": "CHEMBL576127",
       "name": "Fenspiride",
-      "score": 0.904,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL479",
-      "name": "Thioridazine",
-      "score": 0.778,
+      "score": 0.9,
       "caught": true
      },
      {
       "id": "CHEMBL17157",
       "name": "Terfenadine",
-      "score": 0.776,
+      "score": 0.775,
       "caught": true
      },
      {
       "id": "CHEMBL1108",
       "name": "Droperidol",
-      "score": 0.746,
+      "score": 0.76,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL479",
+      "name": "Thioridazine",
+      "score": 0.76,
       "caught": true
      },
      {
       "id": "CHEMBL45816",
       "name": "Mibefradil",
-      "score": 0.74,
+      "score": 0.755,
       "caught": true
      },
      {
       "id": "CHEMBL1419",
       "name": "Sibutramine",
-      "score": 0.738,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL24072",
-      "name": "Prenylamine",
-      "score": 0.736,
+      "score": 0.743,
       "caught": true
      },
      {
       "id": "CHEMBL12713",
       "name": "Sertindole",
-      "score": 0.72,
+      "score": 0.73,
       "caught": true
      },
      {
-      "id": "CHEMBL1213351",
-      "name": "Propoxyphene",
-      "score": 0.706,
+      "id": "CHEMBL24072",
+      "name": "Prenylamine",
+      "score": 0.72,
       "caught": true
      },
      {
       "id": "CHEMBL1201269",
       "name": "Chlorphentermine",
-      "score": 0.696,
+      "score": 0.713,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL1213351",
+      "name": "Propoxyphene",
+      "score": 0.7,
       "caught": true
      },
      {
       "id": "CHEMBL363295",
       "name": "Terodiline",
-      "score": 0.628,
+      "score": 0.62,
       "caught": true
      },
      {
       "id": "CHEMBL1474889",
       "name": "Clobutinol",
-      "score": 0.62,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL1729",
-      "name": "Cisapride",
-      "score": 0.58,
+      "score": 0.618,
       "caught": true
      },
      {
       "id": "CHEMBL531",
       "name": "Pergolide",
-      "score": 0.578,
+      "score": 0.588,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL1729",
+      "name": "Cisapride",
+      "score": 0.568,
       "caught": true
      },
      {
       "id": "CHEMBL188921",
       "name": "Buflomedil",
-      "score": 0.576,
+      "score": 0.562,
       "caught": true
      },
      {
       "id": "CHEMBL121",
       "name": "Rosiglitazone",
-      "score": 0.548,
-      "caught": true
-     },
-     {
-      "id": "CHEMBL1514",
-      "name": "Levomethadyl Acetate",
-      "score": 0.544,
+      "score": 0.545,
       "caught": true
      },
      {
       "id": "CHEMBL248702",
       "name": "Dexfenfluramine",
-      "score": 0.538,
+      "score": 0.542,
+      "caught": true
+     },
+     {
+      "id": "CHEMBL1514",
+      "name": "Levomethadyl Acetate",
+      "score": 0.537,
       "caught": true
      },
      {
       "id": "CHEMBL76370",
       "name": "Tegaserod",
-      "score": 0.514,
+      "score": 0.53,
       "caught": true
      },
      {
       "id": "CHEMBL1697686",
       "name": "Cloforex",
-      "score": 0.446,
+      "score": 0.458,
       "caught": false
      },
      {
       "id": "CHEMBL315838",
       "name": "Encainide",
-      "score": 0.436,
+      "score": 0.427,
       "caught": false
      },
      {
       "id": "CHEMBL400599",
       "name": "Benfluorex",
-      "score": 0.42,
+      "score": 0.427,
       "caught": false
      },
      {
       "id": "CHEMBL1165342",
       "name": "Vincamine",
-      "score": 0.396,
+      "score": 0.393,
       "caught": false
      },
      {
       "id": "CHEMBL442",
       "name": "Ergotamine",
-      "score": 0.368,
+      "score": 0.39,
       "caught": false
      },
      {
       "id": "CHEMBL565",
       "name": "Clofibrate",
-      "score": 0.356,
-      "caught": false
-     },
-     {
-      "id": "CHEMBL2107239",
-      "name": "Ioxitalamic Acid",
-      "score": 0.188,
+      "score": 0.345,
       "caught": false
      },
      {
       "id": "CHEMBL865",
       "name": "Valdecoxib",
-      "score": 0.18,
+      "score": 0.195,
+      "caught": false
+     },
+     {
+      "id": "CHEMBL2107239",
+      "name": "Ioxitalamic Acid",
+      "score": 0.185,
       "caught": false
      },
      {
       "id": "CHEMBL61006",
       "name": "Phenylpropanolamine",
-      "score": 0.166,
+      "score": 0.18,
       "caught": false
      },
      {
       "id": "CHEMBL16080",
       "name": "Trichloroethane",
-      "score": 0.162,
+      "score": 0.152,
       "caught": false
      },
      {
       "id": "CHEMBL44618",
       "name": "Chloroform",
-      "score": 0.148,
+      "score": 0.147,
       "caught": false
      },
      {
       "id": "CHEMBL608",
       "name": "Probucol",
-      "score": 0.136,
-      "caught": false
-     },
-     {
-      "id": "CHEMBL122",
-      "name": "Rofecoxib",
-      "score": 0.128,
+      "score": 0.133,
       "caught": false
      },
      {
       "id": "CHEMBL776",
       "name": "Metaproterenol",
-      "score": 0.118,
+      "score": 0.128,
+      "caught": false
+     },
+     {
+      "id": "CHEMBL122",
+      "name": "Rofecoxib",
+      "score": 0.12,
       "caught": false
      },
      {
       "id": "CHEMBL583",
       "name": "Grepafloxacin",
-      "score": 0.056,
+      "score": 0.055,
       "caught": false
      }
     ]
@@ -662,15 +662,15 @@
  },
  "gemini_cost": {
   "cards": {
-   "calls": 500,
-   "usd": 0.266,
-   "inr": 23.7
+   "calls": 1000,
+   "usd": 0.492,
+   "inr": 43.8
   },
   "experiment": {
    "calls": 476,
    "usd": 0.863,
    "inr": 76.8
   },
-  "total_inr": 100.5
+  "total_inr": 120.6
  }
 }
