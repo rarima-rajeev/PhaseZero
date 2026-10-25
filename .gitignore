@@ -46,3 +46,5 @@ ml/.venv/
 __pycache__/
 ml/raw/
 ml/cache/
+
+ml/.venv312/

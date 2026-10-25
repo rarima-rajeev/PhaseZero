@@ -169,6 +169,8 @@ if __name__ == "__main__":
                "backtest": json.loads((CACHE / "backtest.json").read_text())}
     exp = CACHE / "experiment.json"
     results["experiment"] = json.loads(exp.read_text()) if exp.exists() else None
+    ft = CACHE / "finetune.json"
+    results["finetune"] = json.loads(ft.read_text()) if ft.exists() else None
     results["gemini_cost"] = gemini_cost()
     (ROOT / "src" / "data" / "results.json").write_text(json.dumps(results, indent=1))
     print("cards", len(index), "| with summary", sum(1 for d in drugs if d["id"] in summaries))

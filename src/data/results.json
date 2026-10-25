@@ -649,6 +649,17 @@
    "gemini_mean_abs_change": 0.064
   }
  },
+ "finetune": {
+  "model_id": "yzimmermann/ChemBERTa-77M-MLM-safetensors",
+  "organ": "liver",
+  "epochs": 30,
+  "train_rows": 340,
+  "test_rows": 86,
+  "finetuned_auc": 0.802,
+  "finetuned_accuracy": 0.756,
+  "random_forest_auc": 0.828,
+  "random_forest_accuracy": 0.744
+ },
  "gemini_cost": {
   "cards": {
    "calls": 500,
