@@ -108,10 +108,6 @@ export default function Results() {
           evaluated.
         </li>
         <li>No patient data of any kind. Everything comes from free public databases.</li>
-        <li>
-          I am an AI product manager, not a drug expert. This shows how I build, measure and decide —
-          a real scientist would judge the chemistry far better than I can.
-        </li>
       </ul>
       <p className="mt-4 text-sm font-medium">
         Decision support for researchers. Not medical advice.
