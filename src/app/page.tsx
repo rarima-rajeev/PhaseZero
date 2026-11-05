@@ -18,7 +18,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#fbfaf7]/55 sm:bg-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fbfaf7] via-[#fbfaf7]/85 to-[#fbfaf7]/40" />
         <div className="relative px-5 py-14 sm:px-8 sm:py-20">
-          <h1 className="max-w-xl text-3xl font-semibold tracking-tight sm:text-5xl">
+          <h1 className="max-w-xl text-2xl font-semibold tracking-tight sm:text-4xl">
             A trial before the trial.
           </h1>
           <p className="mt-3 max-w-md text-lg text-stone-600">

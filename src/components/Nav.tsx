@@ -12,8 +12,8 @@ const links = [
 export default function Nav() {
   const path = usePathname();
   return (
-    <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-      <Link href="/" className="mr-auto font-semibold tracking-tight">
+    <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base">
+      <Link href="/" className="mr-auto text-lg font-semibold tracking-tight">
         Phase Zero
       </Link>
       {links.map((l) => (
