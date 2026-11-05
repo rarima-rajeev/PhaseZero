@@ -3,12 +3,16 @@
 :root {
   --background: #fbfaf7;
   --foreground: #1c1b19;
+  /* Sampled from the three illustrations, so the accent already belongs here. */
+  --accent: #bd775c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-display);
+  --color-accent: var(--accent);
 
   /* Bumped ~1-2px above Tailwind's defaults: the site read too small at 100% zoom.
      Changing the scale here grows body copy on every page at once. */

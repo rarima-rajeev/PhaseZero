@@ -13,15 +13,17 @@ export default function Home() {
           priority
           className="absolute inset-0 h-full w-full object-cover object-right"
         />
-        {/* Keeps the headline readable wherever the illustration happens to be busy.
+        {/* Keeps the headline readable wherever the illustration happens to be busy, while
+            letting the molecule art actually show on the right.
             Narrow screens get a flat wash too, since there is no empty side to put text on. */}
-        <div className="absolute inset-0 bg-[#fbfaf7]/55 sm:bg-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fbfaf7] via-[#fbfaf7]/85 to-[#fbfaf7]/40" />
-        <div className="relative px-5 py-14 sm:px-8 sm:py-20">
-          <h1 className="max-w-xl text-2xl font-semibold tracking-tight sm:text-4xl">
+        <div className="absolute inset-0 bg-[#fbfaf7]/65 sm:bg-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fbfaf7] via-[#fbfaf7]/75 to-transparent" />
+        <div className="relative px-5 py-16 sm:px-8 sm:py-24">
+          <h1 className="max-w-xl font-display text-[2rem] leading-[1.1] tracking-tight sm:text-6xl">
             A trial before the trial.
           </h1>
-          <p className="mt-3 max-w-md text-lg text-stone-600">
+          <div className="mt-5 h-0.5 w-14 bg-accent" />
+          <p className="mt-5 max-w-md text-lg text-stone-600">
             Spot warning signs before the big money, $1B, is spent.
           </p>
         </div>
