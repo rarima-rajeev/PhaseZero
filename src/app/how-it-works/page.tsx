@@ -9,7 +9,8 @@ const PARTS = [
     tag: "Machine learning",
     title: "The pattern spotter",
     body: "A small model was trained — by code running on my Mac, not by any AI service — on about 11,000 chemicals that scientists had already tested in the lab. 400 decision trees were grown. Each tree is a flowchart of yes/no questions. It learned to tell the risky ones from the safe ones. Given a drug's structure, it gives a score out of 100. It's a hint to look closer, never a verdict.",
-    sources: "Random Forest, built with scikit-learn. Trained on public lab data from Therapeutics Data Commons.",
+    sources:
+      "Random Forest, run with the free scikit-learn toolkit, on RDKit Morgan fingerprints of each drug's structure. Learned from Therapeutics Data Commons — Harvard's public lab data.\n\nNot a vendor model — this one was trained from scratch for this project, on my own Mac.",
   },
   {
     tag: "Gemini AI",
@@ -95,7 +96,7 @@ export default function HowItWorks() {
       <ol className="mt-8 grid gap-3 sm:grid-cols-5 sm:items-stretch">
         {[
           { k: "You type", v: "a drug name" },
-          { k: "Code", v: "finds the facts" },
+          { k: "Code", v: "finds the facts in four public databases" },
           { k: "ML model", v: "scores the risk" },
           { k: "Gemini AI", v: "writes it up" },
           { k: "You see", v: "one risk card" },
@@ -127,7 +128,7 @@ export default function HowItWorks() {
               <h2 className="font-semibold">{p.title}</h2>
             </div>
             <p className="mt-2.5 text-sm leading-relaxed text-stone-700">{p.body}</p>
-            <p className="mt-2 text-xs text-stone-500">{p.sources}</p>
+            <p className="mt-2 whitespace-pre-line text-xs leading-relaxed text-stone-500">{p.sources}</p>
           </section>
         ))}
       </div>
