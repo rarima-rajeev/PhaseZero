@@ -21,6 +21,42 @@ STYLE = (
     "signatures or brand marks anywhere. No people's faces. Not a photograph."
 )
 
+# The banner behind the site name is deliberately photographic, unlike the three flat
+# illustrations above — so it needs its own style string rather than STYLE.
+PHOTO_STYLE = (
+    "Photorealistic editorial photograph, shot on a 50mm lens at a wide aperture. "
+    "Soft diffused natural light, gentle shadows, shallow depth of field. "
+    "Warm off-white (#fbfaf7) surface and background, with muted terracotta, soft teal and "
+    "pale amber as the only colours. Calm, premium, understated — a quality magazine's science "
+    "pages, not a stock photo. Wide letterbox crop. The left third must be almost empty and "
+    "very soft, so large text can sit over it. "
+    "Absolutely no text, letters, numbers, logos, watermarks, packaging or brand marks. No people."
+)
+
+BANNERS = {
+    "banner-pills": (
+        "Assorted pharmaceutical capsules and round tablets loosely scattered across a warm "
+        "off-white surface, seen from directly overhead. A few translucent terracotta and soft "
+        "teal capsules catch the light. Most of the pills are gathered toward the right side; "
+        "the left third is empty surface with a soft shadow falling across it.",
+        (1800, 560),
+    ),
+    "banner-lab": (
+        "Laboratory glassware on a warm off-white bench, seen slightly from the side: a few "
+        "beakers and round flasks holding pale amber and soft teal liquid, one glass pipette "
+        "resting alongside. Morning light from the right throws long soft shadows to the left. "
+        "The glass is out of focus and clustered on the right; the left third is empty bench.",
+        (1800, 560),
+    ),
+    "banner-macro": (
+        "Extreme close-up macro of three translucent gelatin capsules resting on a warm off-white "
+        "surface, one in muted terracotta, one in soft teal, one clear. Dramatic shallow focus — "
+        "only the nearest capsule is sharp, the rest dissolve into soft colour. The capsules sit "
+        "in the right half; the left half is clean blurred surface.",
+        (1800, 560),
+    ),
+}
+
 IMAGES = {
     "hero": (
         "A wide, airy composition of abstract molecular structures — thin connected lines and small "
@@ -44,10 +80,10 @@ IMAGES = {
 }
 
 
-def make(name, prompt, size):
+def make(name, prompt, size, style=STYLE):
     resp = client.models.generate_content(
         model=MODEL,
-        contents=f"{STYLE}\n\n{prompt}",
+        contents=f"{style}\n\n{prompt}",
         config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
     )
     log_usage("image", resp)
@@ -65,5 +101,9 @@ def make(name, prompt, size):
 if __name__ == "__main__":
     wanted = sys.argv[1:] or list(IMAGES)
     for n in wanted:
-        prompt, size = IMAGES[n]
-        make(n, prompt, size)
+        if n in BANNERS:
+            prompt, size = BANNERS[n]
+            make(n, prompt, size, style=PHOTO_STYLE)
+        else:
+            prompt, size = IMAGES[n]
+            make(n, prompt, size)
