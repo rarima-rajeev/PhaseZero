@@ -1,11 +1,12 @@
 # Phase Zero — plan + page wording (DRAFT v2, simpler)
 
-Nothing is built yet. Once you say "approved", this wording is locked.
+This is the original plan, written before any code existed, and kept as a record of what was
+decided up front. It still contains placeholders and options that were later settled.
+**The live site and the README are the current source of truth, not this file.**
 
 **Wording rules for this site**
 - Write for a smart person from any industry. No pharma jargon.
 - If a science word is needed, explain it in the same line.
-- I (the builder) am an AI product manager, not a drug expert. The site never claims otherwise.
 - The point of the site is the AI product thinking, not the chemistry.
 
 ---
@@ -16,7 +17,7 @@ Nothing is built yet. Once you say "approved", this wording is locked.
 |---|---|---|---|
 | 1 | Look up the drug's chemical structure | Code | Collecting data |
 | 2 | Turn the structure into numbers | Code | Preparing data for ML |
-| 3 | Score liver and heart risk | ML model (trained by me) | Learning from past examples |
+| 3 | Score liver and heart risk | ML model (trained for this project) | Learning from past examples |
 | 4 | Find similar drugs that failed, and official warnings | Code | Using real facts with sources |
 | 5 | Write a short summary from those facts only | Gemini | AI writing that can't make things up |
 | 6 | Make all 500 results ahead of time | Code | Keeping cost near zero |
@@ -65,7 +66,7 @@ New medicines often fail late, after years and huge cost. Two common reasons are
 - **In plain words:** 3–4 sentence summary
   - small label: "Written by AI using only the facts above."
 
-**Footer:** A learning project by an AI product manager. Not medical advice. Scores can be wrong.
+**Footer:** An independent project. Not medical advice. Scores can be wrong.
 
 **Not found:** "We don't have that drug yet. Try another one."
 
@@ -81,7 +82,7 @@ Drug name → **Code** (finds facts) → **ML model** (scores risk) → **Gemini
 
 **Three blocks:**
 - **Code — the fact finder.** Pulls facts from free public databases. Same question, same answer, every time.
-- **ML model — the pattern spotter.** I trained a small model on thousands of chemicals that were already tested. It learned what risky ones tend to look like. It gives a score, not a verdict.
+- **ML model — the pattern spotter.** A small model was trained on thousands of chemicals that were already tested. It learned what risky ones tend to look like. It gives a score, not a verdict.
 - **Gemini — the writer.** Turns the facts into plain English. It is only given the facts, and must link each one to its source.
 
 **Why not an AI agent?**
@@ -97,14 +98,14 @@ All 500 results are made once. Visitors cost nothing, and they always see the sa
 **Title:** Results & decisions
 
 **Test 1: Would it have caught past problems?**
-I took [N] drugs that were pulled from the market for liver or heart harm. I kept them hidden while training, then asked the model to score them.
+[N] drugs that were pulled from the market for liver or heart harm were held out of training entirely, then scored.
 - Caught: [X] of [N]
 - Missed: [Y] — listed below, with my best guess why
 
 **Test 2: Train a small model, or just ask an AI chatbot?**
 Both got the same [N] chemicals they had never seen.
 
-| | My trained model | Asking Gemini directly |
+| | The trained model | Asking Gemini directly |
 |---|---|---|
 | Accuracy (out of 100) | [ ] | [ ] |
 | Cost for 1,000 checks | [ ] | [ ] |
@@ -123,7 +124,6 @@ Both got the same [N] chemicals they had never seen.
 - Only ~500 known drugs.
 - Only liver and heart. Drugs also fail for many other reasons.
 - Few drugs are ever pulled from the market, so Test 1 is small.
-- I am not a drug expert. This shows how I build and test AI products.
 
 **Not medical advice.**
 
